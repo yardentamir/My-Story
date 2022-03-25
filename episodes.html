@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8" />
+    <title>פרקים</title>
+    <meta name="description" content="פרקים של סביבת הסיפור שלי" />
+    <meta name="keywords" content="פרקים,שלבים,חלקים,המשכים" />
+    <meta name="author" content="ירדן טמיר ועמית מילר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" type="image/png" href="images/favicon_mystory.png" />
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--<link href="Styles/reset.css" rel="stylesheet" type="text/css" />-->
+    <link href="Styles/myStyle.css" rel="stylesheet" type="text/css" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="containerbox" dir="rtl">
+        <!--Navbar-->
+        <nav id="top-nav" class="navbar navbar-expand-md fixed-top">
+            <div id="nav_hamburger">
+                <nav class="navbar navbar-light bg-light" dir="ltr">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#"></a>
+
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="dark-blue-text">
+                            <i class="fas fa-bars fa-1x"></i>
+                        </span>
+                    </button>
+
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a id="table-nav-section" class="nav-link" href="login.html">התנתק</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="about-nav-section" class="nav-link" href="#" data-toggle="modal"
+                                   data-target="#aboutModal">אודות</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="instructions-nav-section" class="nav-link" href="#" data-toggle="modal"
+                                   data-target="#instructionsModal">איך משתפים</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a id="stages-nav-section" class="nav-link" href="episodes.html">פרקים</a>
+                            </li>
+                            <li class="nav-item only-admin">
+                                <a id="table-nav-section" class="nav-link" href="data-table.html">טבלת ניהול</a>
+                            </li>
+                        </ul>
+                        <!-- /Links -->
+
+                    </div>
+                    <!-- /Collapsible content -->
+                </nav>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+        <!-- About Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="align-items: center;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size:30pt">&times;</span>
+                        </button>
+                        <h5 class="modal-title w-100" id="aboutModalLabel">אודות</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/logo-story.png" class="logo" />
+                        <p>
+                            סביבה שיתופית המאפשרת למטופלים
+                            <br />
+                            לשתף מידע אישי עם הצוות הרפואי והחינוכי,
+                            <br />
+                            למען שיפור חווית הביקור בבית החולים.
+                        </p>
+                        <p>
+                            פרויקט גמר, תש"פ
+                            <br />
+                            <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+                        </p>
+
+                        <div class="row justify-content-center" style="align-items: flex-start;">
+                            <img src="images/aboutLogos/logo T.L.gif" class="logo" />
+                            <div style="text-align: right; margin-right: 3%;">
+                                <p style="color:deeppink; font-weight: bold;margin:0;">
+                                    צוות הפרויקט:
+                                </p>
+                                <p style="margin: 0;">
+                                    ירדן טמיר
+                                    <br />
+                                    עמית מילר
+                                </p>
+                                <p style="color:deeppink; font-weight: bold; margin:0;">
+                                    מנחי הפרויקט:
+                                </p>
+                                <p>
+                                    ינאי זגורי
+                                    <br />
+                                    טל קליין
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" style="align-items: flex-start;">
+                            <img src="images/aboutLogos/youdo.png" class="logo" />
+                            <div style="text-align: right; margin-right: 3%;">
+                                <p style="margin: 0;">
+                                    בשיתוף עם Youdo
+                                </p>
+                                <p style="color:deeppink;margin:0;">נציגות הארגון:</p>
+                                <p>
+                                    תמי בן צבי
+                                    <br />
+                                    דפי ויטלה
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" style="align-items: flex-start;">
+                            <img src="images/aboutLogos/בית-ספר-ויצמן-לוגו.png" class="logo" />
+                            <div style="text-align: right; margin-right: 3%;">
+                                <p style="color:deeppink;margin:0">צוות המרכז החינוכי:</p>
+                                <p>
+                                    שחר ברשף
+                                    <br />
+                                    ליטל טסלר
+                                    <br />
+                                    אסיה וקסלר
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="details-about-section">
+                            <p>© כל הזכויות שמורות למכון טכנולוגי חולון HIT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions Modal -->
+        <div class="modal fade" id="instructionsModal" tabindex="-1" role="dialog"
+             aria-labelledby="instructionsModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="align-items: center;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size:30pt">&times;</span>
+                        </button>
+                        <h5 class="modal-title w-100" id="instructionsModalLabel">איך משתפים</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/logo-story.png" class="logo" />
+                        <p>
+                            בסביבה השיתופית יש 3 פרקים,
+                            <br />
+                            ובכל פרק תיחשפו למספר שאלות.
+                        </p>
+                        <p>
+                            המעבר בין השאלות מתבצע בעזרת גלילה,
+                            <br />
+                            יש אפשרות לדלג בין השאלות
+                            <br />
+                            וניתן לשנות תשובה בכל עת.
+
+                        </p>
+
+                        <p>
+                            לאחר שיתוף של תשובה
+                            <br />
+                            הסביבה יוצרת לכם סיפור שנמצא בעיגולי ה-story
+                            <br />
+                            ותוכלו ללחוץ על עיגולי ה-story על מנת לצפות בסיפור שלכם.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story status display -->
+        <div class="text-center marginthetop">
+            <h4 class="text-center" style="margin-bottom:10px; color: rgb(221, 60, 168);">פרקים</h4>
+            <p>
+                בחרו פרק פתוח והתחילו לשתף
+                <br />
+                אם הפרק נעול המתינו שהצוות החינוכי יפתח לכם
+            </p>
+            <div class="margins-episode">
+                <div id="episode-lock-unlock1" class="episode-div box animate fadeInUp one">
+                    <button class="btn rounded-circle ep-btn" eid="1" onclick="window.location.href = 'stories-stages/familiarity.aspx'" disabled>
+                        <img src="images/persons/familiarity-person.png" class="select-story-button" />
+                    </button>
+                    <img src="images/unlocked.png" class="locked-images unlock" eid="1" />
+                    <img src="images/locked.png" class="locked-images lock" eid="1" />
+                    <p>פרק הכרות</p>
+                </div>
+                <div id="episode-lock-unlock2" class="episode-div box animate fadeInUp two">
+                    <button class="btn rounded-circle ep-btn" eid="2" onclick="window.location.href = 'stories-stages/hospitalization.aspx'" disabled>
+                        <img src="images/persons/hospitalization-person.png" class="select-story-button" />
+                    </button>
+                    <img src="images/unlocked.png" class="locked-images unlock" eid="2" />
+                    <img src="images/locked.png" class="locked-images lock" eid="2" />
+                    <p>פרק אשפוז</p>
+                </div>
+                <div id="episode-lock-unlock3" class="episode-div box animate fadeInUp three">
+                    <button class="btn rounded-circle ep-btn" eid="3" onclick="window.location.href = 'stories-stages/release.aspx'" disabled>
+                        <img src="images/persons/release-person.png" class="select-story-button" />
+                    </button>
+                    <img src="images/unlocked.png" class="locked-images unlock" eid="3" />
+                    <img src="images/locked.png" class="locked-images lock" eid="3" />
+                    <p>פרק שחרור</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer bg-white">
+        <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון ב<a href="https://www.hit.ac.il/telem/B.A">פקולטה לטכנולוגיות למידה</a>, HIT מכון טכנולוגי חולון</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1080 @@
+﻿<!doctype html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8" />
+    <title>טבלת ניהול</title>
+    <meta name="description" content="טבלת הניהול של המנהלים שבה ניתן לחשוף שאלות ופרקים פר משתמש והורדת הסיפור פר פרק" />
+    <meta name="keywords" content="טבלה,חיפוש משתמש,ניהול,חשיפה,חשיפת שאלות,חשיפת פרקים,תשובות" />
+    <meta name="author" content="ירדן טמיר ועמית מילר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" type="image/png" href="images/favicon_mystory.png" />
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha374-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--<link href="Styles/reset.css" rel="stylesheet" type="text/css" />-->
+    <link href="Styles/myStyle.css" rel="stylesheet" type="text/css" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+
+<body dir="rtl">
+    <div class="containerbox">
+        <!--Navbar-->
+
+        <nav id="top-nav" class="navbar navbar-expand-md fixed-top" dir="rtl">
+            <div id="nav_hamburger">
+                <nav class="navbar navbar-light bg-light" dir="ltr">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#"></a>
+
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="dark-blue-text">
+                            <i class="fas fa-bars fa-1x"></i>
+                        </span>
+                    </button>
+
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a id="table-nav-section" class="nav-link" href="login.html">התנתק</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="about-nav-section" class="nav-link" href="#" data-toggle="modal"
+                                   data-target="#aboutModal">אודות</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="instructions-nav-section" class="nav-link" href="#" data-toggle="modal"
+                                   data-target="#instructionsModal">איך משתפים</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="stages-nav-section" class="nav-link" href="episodes.html">פרקים</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a id="table-nav-section" class="nav-link" href="data-table.html">טבלת ניהול</a>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+
+                    </div>
+                    <!-- Collapsible content -->
+                </nav>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+        <!-- About Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="align-items: center;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size:30pt">&times;</span>
+                        </button>
+                        <h5 class="modal-title w-100" id="aboutModalLabel">אודות</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/logo-story.png" class="logo" />
+                        <p>
+                            סביבה שיתופית המאפשרת למטופלים
+                            <br />
+                            לשתף מידע אישי עם הצוות הרפואי והחינוכי,
+                            <br />
+                            למען שיפור חווית הביקור בבית החולים.
+                        </p>
+                        <p>
+                            פרויקט גמר, תש"פ
+                            <br />
+                            <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+                        </p>
+
+                        <div class="row justify-content-center" style="align-items: flex-start;">
+                            <img src="images/aboutLogos/logo T.L.gif" class="logo" />
+                            <div style="text-align: right; margin-right: 3%;">
+                                <p style="color:deeppink; font-weight: bold;margin:0;">
+                                    צוות הפרויקט:
+                                </p>
+                                <p style="margin: 0;">
+                                    ירדן טמיר
+                                    <br />
+                                    עמית מילר
+                                </p>
+                                <p style="color:deeppink; font-weight: bold; margin:0;">
+                                    מנחי הפרויקט:
+                                </p>
+                                <p>
+                                    ינאי זגורי
+                                    <br />
+                                    טל קליין
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" style="align-items: flex-start;">
+                            <img src="images/aboutLogos/youdo.png" class="logo" />
+                            <div style="text-align: right; margin-right: 3%;">
+                                <p style="margin: 0;">
+                                    בשיתוף עם Youdo
+                                </p>
+                                <p style="color:deeppink;margin:0;">נציגות הארגון:</p>
+                                <p>
+                                    תמי בן צבי
+                                    <br />
+                                    דפי ויטלה
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" style="align-items: flex-start;">
+                            <img src="images/aboutLogos/בית-ספר-ויצמן-לוגו.png" class="logo" />
+                            <div style="text-align: right; margin-right: 3%;">
+                                <p style="color:deeppink;margin:0">צוות המרכז החינוכי:</p>
+                                <p>
+                                    שחר ברשף
+                                    <br />
+                                    ליטל טסלר
+                                    <br />
+                                    אסיה וקסלר
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="details-about-section">
+                            <p>© כל הזכויות שמורות למכון טכנולוגי חולון HIT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions Modal -->
+        <div class="modal fade" id="instructionsModal" tabindex="-1" role="dialog"
+             aria-labelledby="instructionsModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="align-items: center;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size:30pt">&times;</span>
+                        </button>
+                        <h5 class="modal-title w-100" id="instructionsModalLabel">איך משתפים</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/logo-story.png" class="logo" />
+                        <p>
+                            בסביבה השיתופית יש 3 פרקים,
+                            <br />
+                            ובכל פרק תיחשפו למספר שאלות.
+                        </p>
+                        <p>
+                            המעבר בין השאלות מתבצע בעזרת גלילה,
+                            <br />
+                            יש אפשרות לדלג בין השאלות
+                            <br />
+                            וניתן לשנות תשובה בכל עת.
+
+                        </p>
+
+                        <p>
+                            לאחר שיתוף של תשובה
+                            <br />
+                            הסביבה יוצרת לכם סיפור שנמצא בעיגולי ה-story
+                            <br />
+                            ותוכלו ללחוץ על עיגולי ה-story על מנת לצפות בסיפור שלכם.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DeleteUser Modal -->
+        <div class="modal fade" id="Delete-User-Modal" tabindex="-1" role="dialog"
+             aria-labelledby="NoExistsModalLabel" aria-hidden="true" href="javascript:void(0)">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="align-items: center;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size:30pt">&times;</span>
+                        </button>
+                        <h5 class="modal-title w-100" id="NoExistsModalLabel">מחיקת משתמש</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h9></h9>
+                        <div class="flex-row marginthetop2" style="margin: 5%;">
+                            <button id="Delete-User-No" type="button" class="btn btn-outline-primary btn-outline-primary-opessite centered" style="width:80px !important" data-dismiss="modal" aria-label="Close">לא</button>
+                            <button id="Delete-User-Yes" type="button" class="btn btn-outline-primary-1 centered" style="width:80px !important" data-dismiss="modal" aria-label="Close">כן</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Big-ImagesAns-Modal -->
+        <div class="modal fade" id="Big-ImagesAns-Modal" tabindex="-1" role="dialog"
+             aria-labelledby="NoExistsModalLabel" aria-hidden="true" href="javascript:void(0)">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center" style="align-items: center;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size:30pt">&times;</span>
+                        </button>
+                        <h5 class="modal-title w-100" id="NoExistsModalLabel">תמונה מוגדלת</h5>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="flex-row marginthetop2" style="margin: 5%;">
+                            <img id="big-img" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mt-5">
+            <h4 id="answers_table">טבלת ניהול</h4>
+            <div class="input-group search-input margintop">
+                <button type="button" class="btn btn-outline-primary btn-outline-primary-opessite" style="margin-left:1%" onclick="window.location.href = 'register.html'">הרשמת משתמשים</button>
+                <button id="showUsersBTN" type="button" class="btn btn-outline-primary-1">משתמשים קיימים</button>
+            </div>
+
+            <div class="search-box">
+                <p>חפשו לפי מספר טלפון</p>
+                <div class="input-group search-input">
+                    <input id="phone-input" type="tel" class="form-control" />
+                    <button id="sreach-btn" type="button" class="btn btn-outline-primary-1" disabled>חיפוש</button>
+                </div>
+            </div>
+            <div id="no-exists-phone"></div>
+            <div class="container" style="padding-bottom: 10px;">
+                <table id="showUsersTable" class="container table table-bordered fix-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="text-align: center;">שם פרטי</th>
+                            <th scope="col" style="text-align: center;">שם משפחה</th>
+                            <th scope="col" style="text-align: center;">טלפון ההורה</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="hide-till-found-phone" style="border:1px solid gray;padding-bottom: 60px;">
+                <div class="colorful-div flex-row">
+                    <h6 style="padding: 10px 10px 0 10px;margin-left: auto;"></h6>
+                    <button id="deleteUserBtn" class="btn btn-outline-danger btn-help hover-icons">
+                        <img src="images/bin-delete-user.png" data-toggle="modal" data-target="#Delete-User-Modal" />
+                    </button>
+                    <button id="EditUserBtn" class="btn btn-outline-danger btn-help hover-icons">
+                        <img src="images/edit-pen.png" />
+                    </button>
+
+                </div>
+                <div class="container">
+                    <div class="flex-row ">
+                        <label class="col">
+                            <input type="radio" name="episode-select" value="1">
+                            <span id="episode1" class="flex-column">
+                                <span class="btn rounded-circle2 episodes-btn-smaller">
+                                    <img src="images/persons/familiarity-person.png" class="episodes-smaller" />
+                                </span>
+                                <span style="margin: 0 auto;">פרק הכרות</span>
+                            </span>
+                            <button id="episodeShowBtn1" type="button" value="2" name="ep-show" class="btn btn-outline-danger btn-help center-btn-episodes hover-icons">
+                                <img id="btn_img" name="episode-image1" src="images/hide-btn.png">
+                            </button>
+                        </label>
+
+                        <label class="col">
+                            <input type="radio" name="episode-select" value="2">
+                            <span id="episode2" class="flex-column">
+                                <span class="rounded-circle2 episodes-btn-smaller">
+                                    <img src="images/persons/hospitalization-person.png" class="episodes-smaller" />
+                                </span>
+                                <span style="margin: 0 auto;">פרק אשפוז</span>
+                            </span>
+                            <button id="episodeShowBtn2" type="button" value="2" name="ep-show" class="btn btn-outline-danger btn-help center-btn-episodes hover-icons">
+                                <img id="btn_img" name="episode-image2" src="images/hide-btn.png">
+                            </button>
+                        </label>
+                        <label class="col">
+                            <input type="radio" name="episode-select" value="3">
+                            <span id="episode3" class="flex-column">
+                                <span class="rounded-circle2 episodes-btn-smaller">
+                                    <img src="images/persons/release-person.png" class="episodes-smaller" />
+                                </span>
+                                <span style="margin: 0 auto;">פרק שחרור</span>
+                            </span>
+                            <button id="episodeShowBtn3" name="ep-show" value="2" type="button" class="btn btn-outline-danger btn-help center-btn-episodes hover-icons">
+                                <img id="btn_img" name="episode-image3" src="images/hide-btn.png">
+                            </button>
+                        </label>
+                    </div>
+
+
+                    <table id="episodeTable1" class="container table table-bordered fix-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="text-align: center;">שאלות</th>
+                                <th scope="col" class="show-q-column">חשיפה</th>
+                                <th scope="col" style="text-align: center;">תשובות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button id="show-Hide-ALL1" type="button" class="btn btn-outline-primary-1 btn-outline-primary-opessite-1 hide-Show-all" value="2">חשיפת <b>כל</b> <br /> השאלות<br /> בפרק</button>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>מי המשפחה שלכם?</td>
+                                <td>
+                                    <button id="qShowBtn1" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image1" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions1"></p>
+                                    <img id="q-sharedPic1" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions1" class="images-sizes hideInputs" src="">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מי החבר או החברה הטובים שלכם? מה אתם אוהבים לעשות איתם?</td>
+                                <td>
+                                    <button id="qShowBtn2" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image2" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions2"></p>
+                                    <img id="q-sharedPic2" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions2" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow2"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה אתם אוהבים לעשות בזמן הפנוי שלכם?</td>
+                                <td>
+                                    <button id="qShowBtn3" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image3" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions3"></p>
+                                    <p id="ansShow3"></p>
+                                    <img id="q-picOptions3" class="images-sizes hideInputs" src="">
+                                    <img id="q-sharedPic3" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה מצחיק אתכם? או גורם לכם לחייך?</td>
+                                <td>
+                                    <button id="qShowBtn4" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image4" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <img id="q-picOptions4" class="images-sizes hideInputs" src="">
+                                    <img id="q-sharedPic4" class="images-sizes hideInputs" src="">
+                                    <p id="InputTextOptions4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה האוכל האהוב עליכם ומה פחות?</td>
+                                <td>
+                                    <button id="qShowBtn5" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image5" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions5"></p>
+                                    <img id="q-sharedPic5" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions5" class="images-sizes hideInputs" src="">
+                                    <div id="q-Likes5" class="row w-100 mx-auto hideInputs">
+                                        <div class="column" style="margin-left:5%;">
+                                            <img id="like5" class="images-sizes" src="">
+                                            <p class="flex">אוהב</p>
+                                        </div>
+                                        <div class="column">
+                                            <img id="unlike5" class="images-sizes" src="">
+                                            <p class="flex">לא אוהב</p>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה אתם הכי אוהבים לראות בטלוויזיה? שתפו אותנו בסרט או בסדרה האהובים עליכם</td>
+                                <td>
+                                    <button id="qShowBtn6" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image6" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions6"></p>
+                                    <img id="q-sharedPic6" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow6"></p>
+                                    <img id="q-picOptions6" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה מרגיע אתכם?</td>
+                                <td>
+                                    <button id="qShowBtn7" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image7" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions7"></p>
+                                    <p id="ansShow7"></p>
+                                    <img id="q-sharedPic7" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions7" class="images-sizes hideInputs" src="">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה אתם הכי אוהבים בבית הספר ומה פחות?</td>
+                                <td>
+                                    <button id="qShowBtn8" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image8" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+
+                                    <p id="InputTextOptions8"></p>
+                                    <img id="q-sharedPic8" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions8" class="images-sizes hideInputs" src="">
+                                    <div id="q-Likes8" class="row w-100 mx-auto hideInputs">
+                                        <div class="column" style="margin-left:5%;">
+                                            <img id="like8" class="images-sizes" src="">
+                                            <p class="flex">אוהב</p>
+                                        </div>
+                                        <div class="column">
+                                            <img id="unlike8" class="images-sizes" src="">
+                                            <p class="flex">לא אוהב</p>
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>למה אתם צריכים להגיע לבית החולים?</td>
+                                <td>
+                                    <button id="qShowBtn9" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image9" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions9"></p>
+                                    <img id="q-sharedPic9" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow9"></p>
+                                    <img id="q-picOptions9" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    לפני ההגעה לבית החולים יכולות לעלות בנו כל מני שאלות.
+                                    איזה שאלות הייתם רוצים לשאול את הצוותים ביחס לטיפול/ מחלקה/ אשפוז?
+                                </td>
+                                <td>
+                                    <button id="qShowBtn10" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image10" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions10"></p>
+                                    <img id="q-sharedPic10" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow10"></p>
+                                    <img id="q-picOptions10" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>בני כמה אתם? מה מקומכם במשפחה? בכורים? בני זקונים?</td>
+                                <td>
+                                    <button id="qShowBtn11" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image11" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions11"></p>
+                                    <img id="q-sharedPic11" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow11"></p>
+                                    <img id="q-picOptions11" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>היכן אתם גרים? ספרו משהו מעניין על העיר שאתם גרים בה</td>
+                                <td>
+                                    <button id="qShowBtn12" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image12" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions12"></p>
+                                    <img id="q-sharedPic12" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow12"></p>
+                                    <img id="q-picOptions12" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איזה צבע אתם הכי אוהבים? מה הוא מזכיר לכם?</td>
+                                <td>
+                                    <button id="qShowBtn13" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image13" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions13"></p>
+                                    <img id="q-sharedPic13" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions13" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow13"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איך אתם מרגישים עד עכשיו? מה היא הסיבה?</td>
+                                <td>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions14"></p>
+                                    <img id="q-sharedPic14" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions14" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow14"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                    <!--/* ------ table 2 -----*/-->
+
+                    <table id="episodeTable2" class=" container table table-bordered fix-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="text-align: center;">שאלות</th>
+                                <th scope="col" class="show-q-column">חשיפה</th>
+                                <th scope="col" style="text-align: center;">תשובות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button id="show-Hide-ALL2" type="button" class="btn btn-outline-primary-1 btn-outline-primary-opessite-1 centered hide-Show-all" value="2">חשיפת <b>כל</b> <br /> השאלות<br /> בפרק</button>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>באיזה יום התאשפזתם?</td>
+                                <td>
+                                    <button id="qShowBtn15" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image15" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions15"></p>
+                                    <img id="q-sharedPic15" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow15"></p>
+                                    <img id="q-picOptions15" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה חשבתם ואיך הרגשתם כשהגעתם לבית החולים? מה היא הסיבה?</td>
+                                <td>
+                                    <button id="qShowBtn16" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image16" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions16"></p>
+                                    <img id="q-sharedPic16" class="images-sizes hideInputs" src="" />
+                                    <img id="q-picOptions16" class="images-sizes hideInputs" src="" />
+                                    <p id="ansShow16"></p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>האם זה האשפוז הראשון שלכם?</td>
+                                <td>
+                                    <button id="qShowBtn17" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image17" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions17"></p>
+                                    <img id="q-sharedPic17" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions17" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow17"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איזה שאלות רציתם לשאול לפני הטיפול ושכחתם, התביישתם או שלא היה את מי לשאול?</td>
+                                <td>
+                                    <button id="qShowBtn18" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image18" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions18"></p>
+                                    <img id="q-sharedPic18" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions18" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow18"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה אתם אומרים על האוכל בבית החולים?</td>
+                                <td>
+                                    <button id="qShowBtn19" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image19" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions19"></p>
+                                    <img id="q-sharedPic19" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow19"></p>
+                                    <img id="q-picOptions19" class="images-sizes hideInputs" src="">
+                                    <div id="q-Likes19" class="row w-100 mx-auto hideInputs">
+                                        <div class="column" style="margin-left:5%;">
+                                            <img id="like19" class="images-sizes" src="">
+                                            <p class="flex">אוהב</p>
+                                        </div>
+                                        <div class="column">
+                                            <img id="unlike19" class="images-sizes" src="">
+                                            <p class="flex">לא אוהב</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    אתם מאושפזים בחדר מס':
+                                    <br />
+                                    איך הייתם מציעים לשדרג את השהות?
+                                </td>
+                                <td>
+                                    <button id="qShowBtn20" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image20" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions20"></p>
+                                    <img id="q-sharedPic20" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions20" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow20"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>העלו תמונה של דבר אחד שאתם אוהבים בחדר האשפוז שלכם</td>
+                                <td>
+                                    <button id="qShowBtn21" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image21" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions21"></p>
+                                    <img id="q-sharedPic21" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions21" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow21"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איזה רופא/ה הכי עזר/ה לכם? איך?</td>
+                                <td>
+                                    <button id="qShowBtn22" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image22" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="ansShow22"></p>
+                                    <p id="InputTextOptions22"></p>
+                                    <img id="q-sharedPic22" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions22" class="images-sizes hideInputs" src="">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איזה אחות גרמה לכם לחייך? איך?</td>
+                                <td>
+                                    <button id="qShowBtn23" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image23" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="ansShow23"></p>
+                                    <p id="InputTextOptions23"></p>
+                                    <img id="q-sharedPic23" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions23" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>למי סיפרתם שאתם מאושפזים? מישהו הגיע לבקר אתכם?</td>
+                                <td>
+                                    <button id="qShowBtn24" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image24" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions24"></p>
+                                    <img id="q-sharedPic24" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions24" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow24"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>לא תמיד נרצה לשתף את כולם באשפוז שלנו, מי לא הייתם רוצים שידעו שאתם כאן?</td>
+                                <td>
+                                    <button id="qShowBtn25" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image25" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions25"></p>
+                                    <img id="q-sharedPic25" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions25" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow25"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>רשמו שלשה דברים נעימים/ נחמדים/ טובים באשפוז</td>
+                                <td>
+                                    <button id="qShowBtn26" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image26" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions26"></p>
+                                    <img id="q-sharedPic26" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions26" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow26"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה הפסדתם בגלל שאתם בבית החולים?</td>
+                                <td>
+                                    <button id="qShowBtn27" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image27" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions27"></p>
+                                    <img id="q-sharedPic27" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions27" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow27"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה הכי מעצבן באשפוז?</td>
+                                <td>
+                                    <button id="qShowBtn28" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image28" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions28"></p>
+                                    <p id="ansShow28"></p>
+                                    <img id="q-sharedPic28" class="images-sizes hideInputs" src="">
+                                    <img id="q-picOptions28" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מי היה איתכם בניתוח?</td>
+                                <td>
+                                    <button id="qShowBtn29" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image29" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions29"></p>
+                                    <img id="q-sharedPic29" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow29"></p>
+                                    <img id="q-picOptions29" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מי נמצא איתכם עכשיו?</td>
+                                <td>
+                                    <button id="qShowBtn30" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image30" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions30"></p>
+                                    <img id="q-sharedPic30" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow30"></p>
+                                    <img id="q-picOptions30" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>אם יכולתם לבחור בכל אדם שיהיה אתכם במהלך האשפוז, מי הוא היה?</td>
+                                <td>
+                                    <button id="qShowBtn31" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image31" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions31"></p>
+                                    <img id="q-sharedPic31" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow31"></p>
+                                    <img id="q-picOptions31" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה אתם זוכרים מלפני ואחרי הניתוח?</td>
+                                <td>
+                                    <button id="qShowBtn32" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image32" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions32"></p>
+                                    <img id="q-sharedPic32" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow32"></p>
+                                    <img id="q-picOptions32" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה חשבתם בפעם הראשונה כשאמרו לכם שאתם הולכים לעבור ניתוח?</td>
+                                <td>
+                                    <button id="qShowBtn33" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image33" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions33"></p>
+                                    <img id="q-sharedPic33" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow33"></p>
+                                    <img id="q-picOptions33" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה למדתם על עצמכם באשפוז?</td>
+                                <td>
+                                    <button id="qShowBtn34" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image34" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions34"></p>
+                                    <img id="q-sharedPic34" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow34"></p>
+                                    <img id="q-picOptions34" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איזה כוח גיליתם שיש לכם כדי להתגבר על כאב או פחד?</td>
+                                <td>
+                                    <button id="qShowBtn35" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image35" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions35"></p>
+                                    <img id="q-sharedPic35" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow35"></p>
+                                    <img id="q-picOptions35" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>חשבו וספרו לנו על משהו שיכול לשמח אתכם במיוחד, משהו הייתם רוצים לעשות עכשיו</td>
+                                <td>
+                                    <button id="qShowBtn36" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image36" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions36"></p>
+                                    <img id="q-sharedPic36" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow36"></p>
+                                    <img id="q-picOptions36" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>אילו עיסוקים עוזרים לכם להעביר את הזמן באשפוז?</td>
+                                <td>
+                                    <button id="qShowBtn37" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image37" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions37"></p>
+                                    <img id="q-sharedPic37" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow37"></p>
+                                    <img id="q-picOptions37" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה הייתם מספרים לילדים שבאים להתאשפז?</td>
+                                <td>
+                                    <button id="qShowBtn38" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image38" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions38"></p>
+                                    <img id="q-sharedPic38" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow38"></p>
+                                    <img id="q-picOptions38" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איך אתם מרגישים עד עכשיו? מה היא הסיבה?</td>
+                                <td>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions39"></p>
+                                    <img id="q-sharedPic39" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow39"></p>
+                                    <img id="q-picOptions39" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                    <!--// --- table 3 --- //-->
+
+                    <table id="episodeTable3" class="container table table-bordered fix-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="text-align: center;">שאלות</th>
+                                <th scope="col" class="show-q-column">חשיפה</th>
+                                <th scope="col" style="text-align: center;">תשובות</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button id="show-Hide-ALL3" type="button" class="btn btn-outline-primary-1 btn-outline-primary-opessite-1 btn-outline-primary-opessite-1 centered hide-Show-all" value="2">חשיפת <b>כל</b> <br /> השאלות<br /> בפרק</button>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>מה הדבר הראשון שתעשו כשתצאו מכאן?</td>
+                                <td>
+                                    <button id="qShowBtn40" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image40" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions40"></p>
+                                    <img id="q-sharedPic40" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow40"></p>
+                                    <img id="q-picOptions40" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>מה עוד נדרש מכם לעשות כדי להחלים?</td>
+                                <td>
+                                    <button id="qShowBtn41" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image41" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions41"></p>
+                                    <img id="q-sharedPic41" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow41"></p>
+                                    <img id="q-picOptions41" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ספרו איך המרגש להיות אחרי הטיפול והאשפוז</td>
+                                <td>
+                                    <button id="qShowBtn42" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image42" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions42"></p>
+                                    <img id="q-sharedPic42" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow42"></p>
+                                    <img id="q-picOptions42" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>התמונה הכי שווה שצילמתם אחרי שיצאתם מבית החולים אל העולם שבחוץ</td>
+                                <td>
+                                    <button id="qShowBtn43" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image43" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions43"></p>
+                                    <img id="q-sharedPic43" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow43"></p>
+                                    <img id="q-picOptions43" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ביקרתם במרחב החינוכי? מה הכי אהבתם שם ומה הכי פחות?</td>
+                                <td>
+                                    <button id="qShowBtn44" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image44" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions44"></p>
+                                    <img id="q-sharedPic44" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow44"></p>
+                                    <img id="q-picOptions44" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>פרגנו בסלפי שממחיש איך אתם מסכמים את האשפוז</td>
+                                <td>
+                                    <button id="qShowBtn45" type="button" name="q-show" value="2" class="btn btn-outline-danger btn-help hover-icons hideshowTd">
+                                        <img id="btn_img" name="q-image45" src="images/hide-btn.png">
+                                    </button>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions45"></p>
+                                    <img id="q-sharedPic45" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow45"></p>
+                                    <img id="q-picOptions45" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>איך אתם מרגישים עד עכשיו? מה היא הסיבה?</td>
+                                <td>
+                                </td>
+                                <td>
+                                    <p id="InputTextOptions46"></p>
+                                    <img id="q-sharedPic46" class="images-sizes hideInputs" src="">
+                                    <p id="ansShow46"></p>
+                                    <img id="q-picOptions46" class="images-sizes hideInputs" src="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer bg-white">
+        <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון ב<a href="https://www.hit.ac.il/telem/B.A">פקולטה לטכנולוגיות למידה</a>, HIT מכון טכנולוגי חולון</p>
+    </footer>
+
+</body>
+
+</html>
